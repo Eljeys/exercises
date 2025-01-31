@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  height: 80px;
+  align-items: center;
+}
+
+.input_container {
+  display: flex;
+  justify-content: center;
+}
+
+.button_container {
+  display: flex;
+  justify-content: center;
+  margin-top: 2.5rem;
+}
