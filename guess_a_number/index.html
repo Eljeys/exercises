@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jersey+15&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Guess a Number</title>
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to Guess a number</h1>
+    </header>
+    <main>
+      <div class="container_wrapper">
+        <p>Guess a number between 0 and 100</p>
+        <div class="input_container">
+          <input
+            type="text"
+            inputmode="numeric"
+            id="input_filed"
+            placeholder="Type in your Guess"
+          />
+          <button type="submit" id="sub_btn" value="submit">
+            take a Guess
+          </button>
+        </div>
+        <!--------------------------------->
+        <div id="custome_alert" class="modal">
+          <div class="modal_content">
+            <div class="modal_text">
+              <article></article>
+            </div>
+            <button onclick="closeAlert()">Ok</button>
+            <button onclick="reset()" class="reset_btn" id="reset_button">
+              New Game
+            </button>
+          </div>
+        </div>
+
+        <!--------------------------------->
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
