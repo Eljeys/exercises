@@ -11,6 +11,12 @@ header {
   align-items: center;
 }
 
+.choose_number_container {
+  display: flex;
+  justify-content: center;
+  margin: 1.2rem;
+}
+
 .input_container {
   display: flex;
   justify-content: center;
