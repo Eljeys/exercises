@@ -5,23 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <title>Guess a number reverse</title>
+    <script type="module" src="script.js"></script>
   </head>
   <body>
     <header>
       <h1>Guess a Number</h1>
     </header>
     <main>
-      <p class="choosen_number"></p>
+      <p id="choosen_number"></p>
       <div class="input_container">
         <input type="number" id="inpul_field" clase="input_field" />
         <button id="start_btn" type="submit">Start Game</button>
       </div>
       <div class="button_container">
-        <button class="too_Low_btn" id="too_Low_btn">Too low</button>
-        <button class="Correct_btn" id="Correct_btn">Right answer</button>
+        <button class="too_Low_btn" id="too_Low_btn" disabled>Too low</button>
+        <button class="Correct_btn" id="correct_btn" disabled>
+          Right answer
+        </button>
         <button class="too_high_btn" id="too_high_btn">Too high</button>
       </div>
     </main>
-    <script src="script.js"></script>
   </body>
 </html>
