@@ -7,8 +7,10 @@ const tooHighBtn = document.querySelector("#too_high_btn");
 const correctBtn = document.querySelector("#correct_btn");
 const choosenNum = document.querySelector("#choosen_number");
 
+const compResult = document.querySelector("#comp_guess");
+
 let numberOfGuess = 0;
-console.log(compChoice(100, 0));
+// console.log(compChoice(100, 0));
 
 //Load function
 function start() {
@@ -36,4 +38,10 @@ function disabledBtn() {
   correctBtn.disabled = false;
 }
 
-//save players number
+//computers choice
+function generateChoice() {
+  let compGuess = compChoice(100, 0);
+  compResult.innerHTML = `Computer guess is ${compGuess}`;
+}
+
+function confirmChoice() {}
