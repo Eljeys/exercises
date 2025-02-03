@@ -11,12 +11,10 @@ const resetBtn = document.querySelector("#reset_btn");
 let low = 0;
 let high = 100;
 let compGuess = Math.floor((low + high) / 2);
-// let compGuess = computer((0, 100));
 const compResult = document.querySelector("#comp_guess");
 const winText = document.querySelector("#modal_text");
-
 let numberOfGuess = 0;
-// console.log(compChoice(100, 0));
+
 
 //Load function
 function start() {
