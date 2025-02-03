@@ -44,7 +44,7 @@ header {
   line-height: 1.5rem;
   justify-content:center;
   margin: 1.2rem;
-  /* padding: 0.5rem; */
+  padding: 0.5rem;
   box-shadow: 4px 4px 4px 4px rgba(252, 252, 252, 0.868);
   border-color: whitesmoke;
 }
@@ -54,7 +54,6 @@ header {
 }
 
 input {
-  outline: none;
   font-size: 1.5rem;
   height: 2.5rem;
 }
