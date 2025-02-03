@@ -3,6 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jersey+15&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>Guess a number reverse</title>
     <script type="module" src="script.js"></script>
@@ -16,18 +22,18 @@
         <p id="choosen_number"></p>
         <p id="comp_guess"></p>
         <p id="modal_text"></p>
-      </div>
-      <div class="input_container">
-        <input type="number" id="inpul_field" clase="input_field" disabled />
-        <button id="start_btn" type="submit">Start Game</button>
-      </div>
-      <div class="button_container">
-        <button class="too_Low_btn" id="too_Low_btn" disabled>Too low</button>
-        <button class="Correct_btn" id="correct_btn" disabled>
-          Right answer
-        </button>
-        <button class="too_high_btn" id="too_high_btn">Too high</button>
-        <button id="reset_btn" class="hidden">New Game</button>
+        <div class="input_container">
+          <input type="number" id="inpul_field" clase="input_field" disabled />
+          <button id="start_btn" class="start_btn" type="submit">Start Game</button>
+        </div>
+        <div class="button_container">
+          <button class="too_Low_btn" id="too_Low_btn" disabled>Too low</button>
+          <button class="Correct_btn" id="correct_btn" disabled>
+            Right answer
+          </button>
+          <button class="too_high_btn" id="too_high_btn">Too high</button>
+          <button id="reset_btn" class="hidden">New Game</button>
+        </div>
       </div>
     </main>
   </body>
