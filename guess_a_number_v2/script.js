@@ -15,25 +15,24 @@ const compResult = document.querySelector("#comp_guess");
 const winText = document.querySelector("#modal_text");
 let numberOfGuess = 0;
 
-
 //Load function
 function start() {
   startBtn.classList.add("button_hover");
   document.querySelector("input").disabled = false;
-  startBtn.classList.add("button_hover")
+  startBtn.classList.add("button_hover");
   removeHover();
   tooHighBtn.disabled = true;
   tooLowBtn.disabled = true;
   correctBtn.disabled = true;
-  resetBtn.classList.add("hidden","reset_btn")
+  resetBtn.classList.add("hidden", "reset_btn");
   startBtn.addEventListener("click", startGame);
 }
 
 //click events
 function startGame() {
-  startBtn.classList.remove("button_hover")
+  startBtn.classList.remove("button_hover");
   startBtn.disabled = true;
-  startBtn.classList.add("disabled")
+  startBtn.classList.add("disabled");
   document.querySelector("input").disabled = true;
   removedisabledBtn();
   hoverBtn();
@@ -47,8 +46,8 @@ function removedisabledBtn() {
   tooLowBtn.disabled = false;
   correctBtn.disabled = false;
   tooLowBtn.classList.remove("button_hover");
-tooHighBtn.classList.remove("button_hover");
-correctBtn.classList.remove("button_hover");
+  tooHighBtn.classList.remove("button_hover");
+  correctBtn.classList.remove("button_hover");
 }
 
 //computers choice
@@ -76,42 +75,42 @@ function toLow() {
 }
 
 correctBtn.addEventListener("click", () => {
- resetBtn.classList.remove("hidden")
- resetBtn.classList.add("button_hover");
- removeHover();
-removedisabledBtn();
- tooHighBtn.disabled = true;
- tooLowBtn.disabled = true;
- correctBtn.disabled = true;
- compResult.innerHTML = "";
- choosenNum.textContent = "";
- winText.textContent = `Yes I only Used ${numberOfGuess} guess!`
-
+  document.querySelector(".choose_number_container").classList.add("hidden");
+  resetBtn.classList.remove("hidden");
+  resetBtn.classList.add("button_hover");
+  removeHover();
+  removedisabledBtn();
+  tooHighBtn.disabled = true;
+  tooLowBtn.disabled = true;
+  correctBtn.disabled = true;
+  compResult.innerHTML = "";
+  choosenNum.textContent = "";
+  winText.textContent = `Yes. I only Used ${numberOfGuess} guess!`;
 });
 
-resetBtn.addEventListener("click", ()=>{
+resetBtn.addEventListener("click", () => {
   clear();
-})
+});
 
 function clear() {
   location.reload();
 }
 
 //hover function:
-function hoverBtn(){
-tooLowBtn.classList.add("button_hover");
-tooHighBtn.classList.add("button_hover");
-correctBtn.classList.add("button_hover");
-tooLowBtn.classList.remove("disabled");
-tooHighBtn.classList.remove("disabled");
-correctBtn.classList.remove("disabled");
+function hoverBtn() {
+  tooLowBtn.classList.add("button_hover");
+  tooHighBtn.classList.add("button_hover");
+  correctBtn.classList.add("button_hover");
+  tooLowBtn.classList.remove("disabled");
+  tooHighBtn.classList.remove("disabled");
+  correctBtn.classList.remove("disabled");
 }
-//remove hover function: 
-function removeHover(){
-tooLowBtn.classList.remove("button_hover");
-tooHighBtn.classList.remove("button_hover");
-correctBtn.classList.remove("button_hover");
-tooLowBtn.classList.add("disabled");
-tooHighBtn.classList.add("disabled");
-correctBtn.classList.add("disabled");
+//remove hover function:
+function removeHover() {
+  tooLowBtn.classList.remove("button_hover");
+  tooHighBtn.classList.remove("button_hover");
+  correctBtn.classList.remove("button_hover");
+  tooLowBtn.classList.add("disabled");
+  tooHighBtn.classList.add("disabled");
+  correctBtn.classList.add("disabled");
 }
