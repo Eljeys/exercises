@@ -46,6 +46,8 @@ function generateChoice() {
   console.log("computeren gætter på:", compGuess);
   compGuess = Math.floor((low + high) / 2);
   compResult.innerHTML = `Computer guess is ${compGuess}`;
+  numberOfGuess += 1;
+  console.log(numberOfGuess);
 }
 
 tooHighBtn.addEventListener("click", () => {
