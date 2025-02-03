@@ -30,3 +30,9 @@ header {
   justify-content: center;
   margin-top: 2.5rem;
 }
+
+.hidden{
+  display: none ;
+}
+
+
