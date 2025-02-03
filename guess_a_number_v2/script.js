@@ -53,9 +53,8 @@ correctBtn.classList.remove("button_hover");
 
 //computers choice
 function generateChoice() {
-  console.log("computeren gætter på:", compGuess);
   compGuess = Math.floor((low + high) / 2);
-  compResult.innerHTML = `Computer guess is: ${compGuess}`;
+  compResult.innerHTML = `Is the number ${compGuess} ?`;
   numberOfGuess += 1;
   console.log(numberOfGuess);
 }
