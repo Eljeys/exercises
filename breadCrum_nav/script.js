@@ -17,8 +17,7 @@ function createPath() {
   });
 }
 
-//console.log(Arrayet sidste element)
-console.log(bc[bc.length - 1]);
+
 
 
 
