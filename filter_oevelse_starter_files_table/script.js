@@ -32,9 +32,18 @@ function showTheseVehicles(arr) {
 
 
 //filter after electric vehicles
-const electricVehicles = vehicles.filter((each) => each.isElectric);
-showTheseVehicles(electricVehicles);
+// const electricVehicles = vehicles.filter((each) => each.isElectric);
+// showTheseVehicles(electricVehicles);
 
 //filter after vehicles with more than 2 passengers
-const moreThanTwoSeats = vehicles.filter((seats)=> seats.passengers>2);
-showTheseVehicles(moreThanTwoSeats)
+// const moreThanTwoSeats = vehicles.filter((seats)=> seats.passengers>2);
+// showTheseVehicles(moreThanTwoSeats)
+
+// filter vehicles owned by Jonas and is electric
+// const vehiclesOwnedByJonas = vehicles.filter((owner)=>owner.ownedBy==="Jonas" && owner.isElectric)
+// showTheseVehicles(vehiclesOwnedByJonas);
+
+// filter vehicles run on Rugbrød as fuel and have more than 1 passenger 
+// const vehiclesOnRugbroed = vehicles.filter((veh)=>veh.fuel==="Rugbrød" && veh.passengers>1);
+// showTheseVehicles(vehiclesOnRugbroed);
+
