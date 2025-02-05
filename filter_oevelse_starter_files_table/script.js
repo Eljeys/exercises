@@ -12,8 +12,10 @@ const vehicles = [
 ];
 const tbodyPointer = document.querySelector("tbody");
 showTheseVehicles(vehicles);
+// showTheseVehicles(bike);
 
 function showTheseVehicles(arr) {
+  tbodyPointer.innerHTML = "";
   arr.forEach((each) => {
     tbodyPointer.innerHTML += `<tr>
   <td>${each.type}</td>
@@ -26,3 +28,13 @@ function showTheseVehicles(arr) {
 </tr>`;
   });
 }
+
+
+
+//filter after electric vehicles
+const electricVehicles = vehicles.filter((each) => each.isElectric);
+showTheseVehicles(electricVehicles);
+
+//filter after vehicles with more than 2 passengers
+const moreThanTwoSeats = vehicles.filter((seats)=> seats.passengers>2);
+showTheseVehicles(moreThanTwoSeats)
