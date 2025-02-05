@@ -1,6 +1,11 @@
+
+body{
+    background-color: rgb(195, 195, 195);
+}
+
 table {
     border-collapse: collapse;
-    border: 2px solid rgb(140 140 140);
+    border: 2px solid rgb(84, 84, 84);
     font-family: sans-serif;
     font-size: 0.8rem;
     letter-spacing: 1px;
@@ -14,12 +19,12 @@ caption {
 
 thead,
 tfoot {
-    background-color: rgb(228 240 245);
+    background-color: rgb(136, 136, 136);
 }
 
 th,
 td {
-    border: 1px solid rgb(160 160 160);
+    border: 1px solid rgb(68, 68, 68);
     padding: 8px 10px;
 }
 
@@ -37,4 +42,44 @@ tfoot th {
 
 tfoot td {
     font-weight: bold;
+}
+
+
+.button_container{
+    width: 800px;
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+    gap:1rem
+}
+
+
+
+
+button{
+    font-weight: bold;
+    color: white;
+    background-color: black;
+    max-width: 150px;
+    border-radius: 10px;
+    border: solid black;
+    padding: 0.5rem;
+}
+
+button:hover{
+    border: solid white;
+}
+
+
+@media screen and (min-width: 360px) and (max-width:750px) {
+    .button_container{
+        /* width: 800px; */
+        margin-top: 1rem;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        gap:1rem
+    }
+    
 }
