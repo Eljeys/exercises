@@ -29,21 +29,39 @@ function showTheseVehicles(arr) {
   });
 }
 
+const showElectricCarBtn = document.querySelector("#Show_electric_vehicles")
+const showMoreThanTwoSeatsBtn= document.querySelector("#Show_vehicles_with_more_than_two_seats")
+const showVechiclesOwnedBtn = document.querySelector("#Show_vehicles_owned_by_Jonas")
+const showVechiclesOnRugbroedBtn = document.querySelector("#Show_vehicles_on_rugbroed")
+const showFullTableBtn = document.querySelector("#Show_full_table");
 
 
 //filter after electric vehicles
-// const electricVehicles = vehicles.filter((each) => each.isElectric);
-// showTheseVehicles(electricVehicles);
+showElectricCarBtn.addEventListener("click", ()=>{
+const electricVehicles = vehicles.filter((each) => each.isElectric);
+showTheseVehicles(electricVehicles);
+});
+
 
 //filter after vehicles with more than 2 passengers
-// const moreThanTwoSeats = vehicles.filter((seats)=> seats.passengers>2);
-// showTheseVehicles(moreThanTwoSeats)
+showMoreThanTwoSeatsBtn.addEventListener("click",()=>{
+const moreThanTwoSeats = vehicles.filter((seats)=> seats.passengers>2);
+showTheseVehicles(moreThanTwoSeats)
+});
 
 // filter vehicles owned by Jonas and is electric
-// const vehiclesOwnedByJonas = vehicles.filter((owner)=>owner.ownedBy==="Jonas" && owner.isElectric)
-// showTheseVehicles(vehiclesOwnedByJonas);
+showVechiclesOwnedBtn.addEventListener("click",()=>{
+const vehiclesOwnedByJonas = vehicles.filter((owner)=>owner.ownedBy==="Jonas" && owner.isElectric)
+showTheseVehicles(vehiclesOwnedByJonas);
+})
 
-// filter vehicles run on Rugbrød as fuel and have more than 1 passenger 
-// const vehiclesOnRugbroed = vehicles.filter((veh)=>veh.fuel==="Rugbrød" && veh.passengers>1);
-// showTheseVehicles(vehiclesOnRugbroed);
+// filter vehicles run on Rugbrød as fuel and have more than 1 passenger
+showVechiclesOnRugbroedBtn.addEventListener("click",()=>{
+const vehiclesOnRugbroed = vehicles.filter((veh)=>veh.fuel==="Rugbrød" && veh.passengers>1);
+showTheseVehicles(vehiclesOnRugbroed);
+}) 
 
+//Show full table
+showFullTableBtn.addEventListener("click", ()=>{
+  showTheseVehicles(vehicles);
+})
