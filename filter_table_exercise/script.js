@@ -19,12 +19,12 @@ function showTheseVehicles(arr) {
   arr.forEach((each) => {
     tbodyPointer.innerHTML += `<tr>
   <td>${each.type}</td>
-  <td>${each.fuel || "Brandstof ukendt" }</td>
+  <td>${each.fuel || "-" }</td>
   <td>${each.passengers}</td> 
-  <td>${each.stops ? each.stops.join(","):"Ingen Stop"}</td>
-  <td>${each.ownedBy || "Ukendt Ejer"}</td>
-  <td>${each.isElectric ? "Ja" : "Nej"}</td>
-  <td>${each.isTandem ? "Ja" : "Nej"}</td>
+  <td>${each.stops ? each.stops.join(","):"-"}</td>
+  <td>${each.ownedBy || "-"}</td>
+  <td>${each.isElectric ? "X" : "-"}</td>
+  <td>${each.isTandem ? "X" : "-"}</td>
 </tr>`;
   });
 }
