@@ -4,6 +4,7 @@ body{
 }
 
 table {
+    width: 800px;
     border-collapse: collapse;
     border: 2px solid rgb(84, 84, 84);
     font-family: sans-serif;
@@ -51,6 +52,7 @@ tfoot td {
     display: flex;
     flex-wrap: wrap;
     gap:1rem;
+    margin-bottom: 0.5rem;
 }
 
 
@@ -63,7 +65,6 @@ button{
     max-width: 150px;
     border-radius: 10px;
     border: solid black;
-    padding: 0.5rem;
 }
 
 button:hover{
