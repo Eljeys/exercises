@@ -14,3 +14,21 @@ const texts = {
   },
 };
 const locale = "da";
+
+texts[locale].texts.forEach(item=>{
+  const element = document.querySelector(item.location);
+  if(element){
+    element.textContent = item.text;
+  }
+})
+
+
+
+
+
+
+
+
+
+
+
