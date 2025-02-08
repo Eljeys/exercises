@@ -1,4 +1,5 @@
 "use strict";
+// window.addEventListener("DOMContentLoaded", ChooseLan);
 const texts = {
   de: {
     texts: [
