@@ -1,0 +1,14 @@
+
+
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+    border:solid black;
+    height: 80px;
+    align-items: center;
+}
+span{
+    font-weight: bold;
+}

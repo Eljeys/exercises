@@ -14,15 +14,31 @@ const texts = {
   },
 };
 const locale = "da";
+const locale2= "de";
 
-texts[locale].texts.forEach(item=>{
-  const element = document.querySelector(item.location);
-  if(element){
-    element.textContent = item.text;
+
+const dropdown = document.querySelector("#choose_language");
+
+dropdown.addEventListener("click", ChooseLan);
+
+function ChooseLan(){
+  if(dropdown.value==="Da"){
+    texts[locale].texts.forEach(item=>{
+      const element = document.querySelector(item.location);
+      if(element){
+        element.textContent = item.text;
+      }
+    })
   }
-})
-
-
+  else{
+    texts[locale2].texts.forEach(item=>{
+      const element = document.querySelector(item.location);
+      if(element){
+        element.textContent = item.text;
+      }
+    })
+  }
+}
 
 
 
