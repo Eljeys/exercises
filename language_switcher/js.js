@@ -14,38 +14,27 @@ const texts = {
     ],
   },
 };
-const locale = "da";
-const locale2= "de";
-
+let locale = "da";
+let locale2 = "de";
 
 const dropdown = document.querySelector("#choose_language");
 
-dropdown.addEventListener("click", ChooseLan);
+dropdown.addEventListener("change", ChooseLan);
 
-function ChooseLan(){
-  if(dropdown.value==="Da"){
-    texts[locale].texts.forEach(item=>{
+function ChooseLan() {
+  if (dropdown.value === "Da") {
+    texts[locale].texts.forEach((item) => {
       const element = document.querySelector(item.location);
-      if(element){
+      if (element) {
         element.textContent = item.text;
       }
-    })
-  }
-  else{
-    texts[locale2].texts.forEach(item=>{
+    });
+  } else {
+    texts[locale2].texts.forEach((item) => {
       const element = document.querySelector(item.location);
-      if(element){
+      if (element) {
         element.textContent = item.text;
       }
-    })
+    });
   }
 }
-
-
-
-
-
-
-
-
-
