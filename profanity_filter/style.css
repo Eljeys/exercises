@@ -1,0 +1,33 @@
+body {
+  margin: 1rem 6.25rem;
+  background-color: rgb(255, 245, 234);
+}
+
+header {
+  border-bottom: solid black;
+  display: flex;
+  height: 80px;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.highligted_word {
+  background-color: yellow;
+  font-weight: bold;
+}
+button {
+  margin-top: 1rem;
+  padding: 0.5rem 0.5rem;
+  border: solid black;
+  background-color: transparent;
+  box-shadow: 2px 2px 2px 1px rgb(0 0 0 / 20%);
+}
+button:hover {
+  background-color: black;
+  color: white;
+  box-shadow: none;
+}
+
+dialog {
+  font-weight: bold;
+}
