@@ -1,0 +1,13 @@
+html {
+  --lightness: 40;
+  --saturation: 40;
+  background-color: hsl(from green 100 var(--saturation) var(--lightness));
+}
+
+/*Hvad har jeg gjort?*/
+/*
+1) har selected html elementet fra index.html (hvilke er hele dokument/browseren-viduet), og givet den nogle regler. 
+2) Dernæst er en custom property kaldt --lightness blevet defineret med værdien 40 (en default værdi)
+3) Dernæst har er der defineret en background.color som er angivet med hsl værdi (hue, saturation & light). Disse værdier går fra 0-100, og i dette tilfælde bliver der taget udgangspunkt i farven grøn. For at man kan manipulerer lys-værdien er der gjort brug af den custom property --lightness som via javascript bliver manipuleret og sat ind på 3. linje i koden som værdi til --lightness
+samme proces er gjort med costume property --saturation. 
+*/
