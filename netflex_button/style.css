@@ -1,7 +1,43 @@
+body {
+  background-color: rgb(56, 56, 56);
+}
+
 .button {
+  background-color: transparent;
   background-color: grey;
-  border-style: none;
+  /* border-inline-start-width: solid red; */
+  border: 1px solid black;
   border-radius: 5px;
   padding: 0.8rem 1rem;
   width: 200px;
+  animation: button 10s linear forwards;
+}
+
+div {
+  border-radius: 5px;
+  border-inline-start-width: solid red;
+  backdrop-filter: red;
+  width: 200px;
+  height: fit-content;
+  animation: load 10s linear forwards;
+  z-index: 99;
+}
+
+@keyframes load {
+  0% {
+    width: 0;
+  }
+  100% {
+    background-color: white;
+    width: 200px;
+  }
+}
+
+@keyframes button {
+  0% {
+    background-color: grey;
+  }
+  100% {
+    background-color: transparent;
+  }
 }
