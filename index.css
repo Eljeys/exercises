@@ -1,0 +1,101 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  color-scheme: light dark;
+  --background-clr-light: #f5f5f5;
+  --border-crl: #121212;
+  --prim-clr: #2e86c1;
+  --sec-clr: #34495e;
+  --acc-clr: #9c27b0;
+  --text-clr: #212121;
+
+  --background-clr-dark: #121212;
+  --border-clr-dark: #f5f5f5;
+  --prim-clr-dark: #64b5f6;
+  --sec-clr-dark: #95a5a6;
+  --acc-clr-dark: #ce93d8;
+  --text-clr-dark: #e0e0e0;
+
+  --button-state-hover: #9c27b0;
+  --button-state2-hover: #c04fd4;
+  --button-state-click: #995ea4;
+
+  --text-sm1: 0.25rem;
+  --text-sm2: 0.5rem;
+  --text-sm3: 0.75rem;
+  --text-m1: 1rem;
+  --text-m2: 1.25rem;
+  --text-m3: 1.5rem;
+  --text-lg1: 2rem;
+  --text-lg2: 3rem;
+  --text-lg3: 4rem;
+
+  --text-weight: bold;
+
+  --border-rad-sm: 2px;
+  --border-rad-m: 4px;
+  --border-rad-lg: 8px;
+  --border-rad-xl: 16;
+}
+body {
+  margin: 0 100px;
+}
+header {
+  display: flex;
+  /* border: solid red; */
+  height: 100px;
+  align-items: center;
+}
+
+.nav_wrapper {
+  /* border: solid red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav_link {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.nav_link a {
+  text-decoration: none;
+  color: var(--text-clr-light);
+}
+
+button {
+  padding: 0.5rem 1rem;
+  font-weight: var(--text-weight);
+  border-radius: var(--border-rad-lg);
+  font-size: var(--text-m2);
+  background-color: var(--prim-clr-dark);
+  color: var(--text-clr-light);
+  border-color: var(--border-clr);
+  border: solid;
+}
+button:hover {
+  background-color: var(--button-state-hover);
+  color: var(--text-clr-dark);
+  border-color: var(--border-clr);
+}
+
+@media (prefers-color-scheme: dark) {
+  .dark-mode {
+    background-color: var(--background-clr-dark);
+    color: var(--text-clr-dark);
+  }
+  button:hover {
+    background-color: var(--button-state2-hover);
+    color: var(--text-clr-dark);
+    border-color: var(--border-clr);
+  }
+}
+@media (prefers-color-scheme: light) {
+  .light-mode {
+    background-color: var(--background-clr-light);
+  }
+}
