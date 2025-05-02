@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Todo app",
+  "version": "1.0",
+  "description": "dette er en todo app",
+  "action": {
+    "default_popup": "index.html",
+    "window_position": {
+      "left": 0,
+      "top": 0,
+      "width": 800,
+      "height": 600
+    }
+  },
+  "permissions": ["management"]
+}
