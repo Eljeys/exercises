@@ -14,6 +14,9 @@
 
   /*Text sizes*/
   --text-size-m: 1.2rem;
+
+  /*toggle switch height*/
+  --toggle-switch-hight: 1.7rem;
 }
 
 .dark-mode {
@@ -79,7 +82,7 @@ header {
   border-radius: 1.2rem;
   background-color: var(--base-button);
   position: relative;
-  height: 1.5rem;
+  height: var(--toggle-switch-hight);
   width: 4.2rem;
   transition: background-color 0.5s;
   justify-content: space-between;
@@ -101,15 +104,13 @@ header {
 .toggle-switch-slider {
   display: block;
   width: var(--default-width);
-  height: 1.5rem;
+  height: var(--toggle-switch-hight);
   margin: 0;
   border-radius: 1.2rem;
   background-color: var(--switch-color);
-
   position: absolute;
   top: 0;
   right: var(--slider-width);
-  bottom: 0;
   transition: right 0.5s ease;
   box-shadow: 0 0 1px #222;
   z-index: 2;
